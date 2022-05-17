@@ -2,15 +2,14 @@
     <div v-if="open === true" class="vue-modal">
         <div class="vue-modal-inner">
             <div class="vue-modal-content">
-                <slot />
-              	<button type="button" @click="handleClose">Close</button>
+              <slot />
+              <button type="button" @click="handleClose">Close</button>
             </div>
         </div>
     </div>
 </template>
 
 <script>
-// import { defineComponent } from "@vue/runtime-core"
 
 export default {
   props: {
